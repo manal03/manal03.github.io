@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia&family=Space+Grotesk:wght@400;500&family=Tilt+Neon&family=Ubuntu:wght@300&family=Ysabeau:wght@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia&family=Space+Grotesk:wght@400;500&family=Tilt+Neon&family=Ubuntu:wght@300&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        background: #dce6e3;
+    }
+    .container{
+        width:100%;
+        height: auto; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow:wrap;
+    }
+    .box1{
+        width:300px;
+        height:100%;
+        margin: 10px;
+        box-sizing:50px;
+        text-align: center;
+        justify-content: center;
+        padding-top:30px;
+    }
+    .box2{
+        width:400px;
+        height:100%;
+        padding:0 50px;
+        box-sizing:50px;
+        overflow-y: scroll;
+        
+    }
+    ::-webkit-scrollbar{
+        display:hidden;
+    }
+    .section{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #title{
+        font-family: 'Ysabeau', sans-serif;
+        text-align: center;
+
+    }
+
+    @media screen and (max-width:1200px){
+        .box1{
+            width:40%;
+        }
+        .box2{
+            width:40%;
+        }
+
+    }
+    @media screen and (max-width:700px){
+        .box1{
+            width:100%;
+        }
+        .box2{
+            width:100%;
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="manali.jpg" width="200px">
+            <div class="section">
+                
+                <h1 >Manali Bisht</h1>
+            <p>Hello I am currently a computer science student at York University</p>
+            <br>
+            <hr>
+            <br>
+            <p>Connect with me!<p>
+                <br>
+            <hr>
+            <br>
+            <p>Linkedin       <a target="_blank" href="https://www.linkedin.com/in/manali-bisht/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a></p>
+            <p>Github     <a target="_blank" href="https://github.com/manal03"><i class="fa fa-github-square" style="font-size:24px" style="margin: 40px;"></i></a></p>
+            <p>Email     <a target="_blank" href="manali.bisht17@gmail.com"><i class="fa fa-envelope" style="font-size:24px" style="margin: 40px;"></i></a></p>
+        </div>
+        </div>
+        <div class="box2">
+            <div class="section">
+            <h2 id="title">Leadership/Extracurricular</h2>
+            <hr>
+            <h3>On Your Mark Tutor</h3>
+            <p>Assisted highschool student individually to help them understand a basic or advanced mathematical concept.</p>
+            <br>
+            <h3>Logistics Executive - ELLEHACKS</h3>
+            <p>Helped organize a woman/non-binary targeted hackathon.</p>
+        </div>
+        <br>
+            <div class="section">
+            <h2 id="title">Projects</h2>
+            <hr>
+            <h3>Number Akinator</h3>
+            <h5>HTML/CSS/Javascript/Mocha</h5>
+            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Ecommerce Project</h3>
+            <h5>PHP/Bootstrap/XAMPP</h5>
+            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Hotel Management</h3>
+            <h5>PowerBI,SQL </h5>
+            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+        </div>
+        <br>
+        <div class="section">
+            <h2 id="title">Skills</h2>
+            <hr>
+            <p style="font-weight: bold;">Languages:<p>Java, Sql, C, Bash, HTML/CSS</p></p>
+            <p style="font-weight:bold">Technologies:</p><p>JIRA, Linux(Ubuntu), Git</p>
+        </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
