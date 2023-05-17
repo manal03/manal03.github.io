@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -13,7 +14,7 @@
     *{
         margin:0;
         padding:0;
-        background: #dce6e3;
+        background: white;
     }
     .container{
         width:100%;
@@ -32,24 +33,28 @@
         justify-content: center;
         padding-top:30px;
     }
+    .scroll{
+        overflow: hidden;
+        overflow-y: auto;
+        height:600px;
+    }
     .box2{
         width:400px;
-        height:100%;
+    
         padding:0 50px;
         box-sizing:50px;
-        overflow-y: scroll;
-        
+        overflow: hidden;
     }
-    ::-webkit-scrollbar{
-        display:hidden;
-    }
-    .section{
-        font-family: 'Ubuntu', sans-serif;
-    }
+
+    
     #title{
         font-family: 'Ysabeau', sans-serif;
         text-align: center;
 
+    }
+    .box1 img{
+        border-radius: 30%;
+        margin-bottom: 10px;
     }
 
     @media screen and (max-width:1200px){
@@ -74,8 +79,12 @@
 <body>
     <div class="container">
         <div class="box1">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+
             <img src="manali.jpg" width="200px">
+        </div>
             <div class="section">
+            
                 
                 <h1 >Manali Bisht</h1>
             <p>Hello I am currently a computer science student at York University</p>
@@ -91,6 +100,7 @@
             <p>Email     <a target="_blank" href="manali.bisht17@gmail.com"><i class="fa fa-envelope" style="font-size:24px" style="margin: 40px;"></i></a></p>
         </div>
         </div>
+        <div class="scroll">
         <div class="box2">
             <div class="section">
             <h2 id="title">Leadership/Extracurricular</h2>
@@ -100,6 +110,10 @@
             <br>
             <h3>Logistics Executive - ELLEHACKS</h3>
             <p>Helped organize a woman/non-binary targeted hackathon.</p>
+            <br>
+            <h3>Exam Invigilator - JLPT </h3>
+            <p>Registered in hundreds of students through excel, verified identity and assisted to seating room</p>
+
         </div>
         <br>
             <div class="section">
@@ -107,19 +121,25 @@
             <hr>
             <h3>Number Akinator</h3>
             <h5>HTML/CSS/Javascript/Mocha</h5>
-            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numberAkinator" target="_blank"> check it out.</a></p>
         </div>
         <br>
         <div class="section">
             <h3>Ecommerce Project</h3>
             <h5>PHP/Bootstrap/XAMPP</h5>
-            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+            <p><a href="https://github.com/manal03/ringarde" target="_blank"> check it out.</a></p>
         </div>
         <br>
         <div class="section">
             <h3>Hotel Management</h3>
             <h5>PowerBI,SQL </h5>
-            <p>Random number generator game. Group project for EECS 1012,<a href="https://github.com/manal03/numAki"> check it out.</a></p>
+            <p>Converted excel content to database schema queries and merged multiple files to answer questions for database<a href="https://github.com/manal03/sqlProject" target="_blank"> check it out.</a></p>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Crowded Airport Visualiazation </h3>
+            <h5>Jupyter Notebook, Matplotlib, Pandas </h5>
+            <p>Analyzed a dataset of airports and their passenger traffic using Python and Pandas, and visualized the findings with Matplotlib<a href="https://github.com/manal03/CrowdedAirport" target="_blank"> check it out.</a></p>
         </div>
         <br>
         <div class="section">
@@ -131,7 +151,9 @@
 
         </div>
     </div>
+</div>
 
-    
+<script src="vanilla-tilt.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>
